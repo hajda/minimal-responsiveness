@@ -1,0 +1,32 @@
+#flx-menu {
+    list-style-image: url("../images/bullet.png");
+    /*list-style: square inside url("../images/user.png");*/
+}
+
+
+#flx-menu > .flx-menu-item {
+    /*display: list-item;*/
+    float: right;
+    min-width: 73px;
+}
+
+#flx-menu-toggler {
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    #flx-menu-toggler {
+        visibility: visible;
+    }
+
+    #flx-menu.flx-mobile-hide {
+        visibility: hidden;
+    }
+
+    #flx-menu > .flx-menu-item {
+        float: none;
+    }
+}

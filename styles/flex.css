@@ -1,0 +1,51 @@
+/* frame: header | content | footer */
+
+html, body, #flx-container {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+}
+
+#flx-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#flx-header {}
+#flx-content {
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+#flx-footer {}
+
+/* header: site logo | menu container */
+
+#flx-header {
+    display: flex;
+    flex-direction: row;
+}
+
+#flx-site-logo {}
+#flx-menu-container {flex-grow: 1;}
+
+
+/* content: sidebar | content body */
+
+#flx-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#flx-sidebar {}
+#flx-content-body {flex-grow: 1;}
+
+
+/* testing */
+div {
+    border: solid 1px #d9d9d9;
+}

@@ -1,0 +1,14 @@
+<div>
+    <ul id="flx-menu"
+        ng-class="menu.mobileHide ? 'flx-mobile-hide' : 'flx-mobile-show'"
+    >
+        <li class="flx-menu-item">Lorem</li>
+        <li class="flx-menu-item">Ipsum</li>
+        <li class="flx-menu-item">Dolor</li>
+        <li class="flx-menu-item">Sit</li>
+        <li class="flx-menu-item">Amet</li>
+    </ul>
+</div>
+<div id="flx-menu-toggler"
+     ng-click="MenuCtrl.toggleMobileHide()"
+>{{menu.mobileHide | flxmenutoggler}}</div>
